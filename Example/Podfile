@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'WGCategoryKit_Example' do
+  pod 'WGCategoryKit', :path => '../'
+
+  target 'WGCategoryKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
