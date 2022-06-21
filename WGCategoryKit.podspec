@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'WGCategoryKit/Classes/**/*'
+  s.source_files = 'WGCategoryKit/Classes/**/*{h,m}'
   
   # s.resource_bundles = {
   #   'WGCategoryKit' => ['WGCategoryKit/Assets/*.png']
