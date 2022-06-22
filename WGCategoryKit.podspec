@@ -4,11 +4,11 @@
 #
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
+#pod lib lint WGCategoryKit.podspec --sources='git@github.com:bbwlcwd/WGCategoryKit.git,https://github.com/CocoaPods/Specs.git'  --allow-warnings
 
 Pod::Spec.new do |s|
   s.name             = 'WGCategoryKit'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A short description of WGCategoryKit.'
 
 # This description is used to generate tags and improve search results.
@@ -41,6 +41,6 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
-  s.dependency 'UMAccount', '1.6.4'
+  s.dependency 'UMAccount', '~> 1.6.4'
   
 end
