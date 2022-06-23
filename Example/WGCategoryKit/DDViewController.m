@@ -7,6 +7,8 @@
 //
 
 #import "DDViewController.h"
+#import "UMLog.h"
+
 
 @interface DDViewController ()
 
@@ -18,6 +20,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *version = [UMLogClient version];
+    NSLog(@"log client version = %@", version);
 }
 
 - (void)didReceiveMemoryWarning

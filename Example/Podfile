@@ -1,10 +1,15 @@
-use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/bbwlcwd/WGSpecs.git'
+source 'https://github.com/umeye/umeye-specs.git'
+#use_frameworks!
 
 platform :ios, '9.0'
 
 target 'WGCategoryKit_Example' do
-  pod 'WGCategoryKit', :path => '../'
-
+#  pod 'WGCategoryKit', :path => '../'
+   pod 'WGCategoryKit'
+  
+   
   target 'WGCategoryKit_Tests' do
     inherit! :search_paths
 
