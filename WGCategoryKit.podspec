@@ -58,24 +58,24 @@ TODO: Add long description of the pod here.
   s.subspec 'CLUMVideo' do |ss|
       ss.public_header_files = 'WGCategoryKit/Classes/UMVideo/*.h'
       ss.source_files          = 'WGCategoryKit/Classes/UMVideo/*.{h,m}'
-      s.dependency 'UMP2P', '2.10.7.1'
+      ss.dependency 'UMP2P', '2.10.7.1'
     end
   
   s.subspec 'CLUMP2P' do |ss|
       ss.public_header_files = 'WGCategoryKit/Classes/UMP2P/*.h'
       ss.source_files          = 'WGCategoryKit/Classes/UMP2P/*.{h,m}'
-      s.dependency 'UMP2P', '2.10.7.1'
+      ss.dependency 'UMP2P', '2.10.7.1'
     end
   s.subspec 'CLUMOpenGL' do |ss|
       ss.public_header_files = 'WGCategoryKit/Classes/UMOpenGL/*.h'
       ss.source_files          = 'WGCategoryKit/Classes/UMOpenGL/*.{h,m}'
-      s.dependency 'UMP2P', '2.10.7.1'
+      ss.dependency 'UMP2P', '2.10.7.1'
     end
   
   s.subspec 'CLUMHLS' do |ss|
       ss.public_header_files = 'WGCategoryKit/Classes/UMHLS/*.h'
       ss.source_files          = 'WGCategoryKit/Classes/UMHLS/*.{h,m}'
-      s.dependency 'UMHLS', '1.3.2'
+      ss.dependency 'UMHLS', '1.3.2'
     end
   
   
