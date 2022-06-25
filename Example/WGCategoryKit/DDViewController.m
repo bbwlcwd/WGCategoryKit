@@ -8,6 +8,7 @@
 
 #import "DDViewController.h"
 #import "UMLog.h"
+#import  "UMAccount.h"
 
 
 @interface DDViewController ()
@@ -23,6 +24,10 @@
     
     NSString *version = [UMLogClient version];
     NSLog(@"log client version = %@", version);
+    
+    
+    NSString *web_version = [UMWebClient version];
+    NSLog(@"log client web_version = %@", web_version);
 }
 
 - (void)didReceiveMemoryWarning
