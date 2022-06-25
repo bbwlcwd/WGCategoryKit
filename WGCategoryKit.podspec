@@ -29,9 +29,28 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-
+#这些模式与源文件相匹配，以包含将向用户的项目公开的头文件，并从中生成文档。构建库时，这些标头将出现在构建目录中。如果没有指定公共头文件，那么source_files中的所有头文件都被认为是公共的。
   s.public_header_files   = 'WGCategoryKit/Classes/**/*.h'
   s.source_files          = 'WGCategoryKit/Classes/**/*.{h,m}'
+  
+  s.subspec 'categoryFile' do |ss|
+      ss.public_header_files = 'WGCategoryKit/Classes/categoryFile/*.h'
+      s.source_files          = 'WGCategoryKit/Classes/categoryFile/*.{h,m}'
+    end
+  s.subspec 'UMAccount' do |ss|
+      ss.public_header_files = 'WGCategoryKit/Classes/UMAccount/*.h'
+    end
+  
+  s.subspec 'UMBasis' do |ss|
+      ss.public_header_files = 'WGCategoryKit/Classes/UMBasis/*.h'
+    end
+  s.subspec 'UMLog' do |ss|
+      ss.public_header_files = 'WGCategoryKit/Classes/UMLog/*.h'
+    end
+  s.subspec 'UMUDID' do |ss|
+      ss.public_header_files = 'WGCategoryKit/Classes/UMUDID/*.h'
+    end
+  
   
   # s.resource_bundles = {
   #   'WGCategoryKit' => ['WGCategoryKit/Assets/*.png']
@@ -41,6 +60,6 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
-  s.dependency 'UMAccount', '~> 1.6.4'
+  s.dependency 'UMAccount', '1.6.4'
   
 end
