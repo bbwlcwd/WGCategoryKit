@@ -44,7 +44,7 @@ TODO: Add long description of the pod here.
       ss.source_files          = 'WGCategoryKit/Classes/UMBasis/*.{h,m}'
       ss.dependency 'UMAccount', '1.6.4'
     end
-  s.subspec 'CLUMAccount' do |ss|
+  s.subspec 'CLLog' do |ss|
       ss.public_header_files = 'WGCategoryKit/Classes/UMLog/*.h'
       ss.source_files          = 'WGCategoryKit/Classes/UMLog/*.{h,m}'
       ss.dependency 'UMAccount', '1.6.4'
